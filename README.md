@@ -1,8 +1,14 @@
 # farm js-plugins-tanstack-router-watch
 
+![npm](https://img.shields.io/npm/v/%40houkunlin%2Ffarm-js-plugin-tanstack-router-watch.svg)
+
 > tanstack router 路由文件变更监听，然后重新生成 routeTree.gen.ts 文件
 
 ## 示例
+
+```bash
+npm i -D @houkunlin/farm-js-plugin-tanstack-router-watch
+```
 
 `farm.config.js`
 
@@ -64,7 +70,7 @@ export default defineConfig({
       routesDirectory: 'src/routes/',
       // 在开发环境下 autoCodeSplitting: true 会无法加载页面，但是 build 后就正常了
       autoCodeSplitting: isProd,
-      // 禁用 tanstackRouter 插件的生成 routeTree.gen.ts 功能，使用 TanStackRouterWatch 插件来达成此目的
+      // 禁用 tanstackRouter 插件的生成 routeTree.gen.ts 功能，使用 farmJsPluginTanstackRouterWatch 插件来达成此目的
       enableRouteGeneration: false,
     }),
   ],
