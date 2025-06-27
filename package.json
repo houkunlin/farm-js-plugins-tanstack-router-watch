@@ -5,6 +5,9 @@
   "main": "./build/cjs/index.cjs",
   "types": "./build/cjs/index.d.ts",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "import": "./build/esm/index.mjs",
